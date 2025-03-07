@@ -21,9 +21,22 @@
 | US-№ | An-№ | Verbindlichkeit | Beschreibung                                                   |
 | ---- | ---- | -------------- | ------------------------------------------------------------- |
 | 1.1  | 1    | muss           | Als User möchte ich Dateien und Ordner suchen können, um schnell auf sie zuzugreifen. |
+| 1.2  | 1    | sollte         | Als User möchte ich die Suchergebnisse filtern können (z. B. nur Dateien oder nur Ordner), um relevantere Ergebnisse zu erhalten. |
+| 1.3  | 1    | sollte         | Als User möchte ich die Suchergebnisse nach Name, Datum oder Typ sortieren können, um schneller die richtige Datei zu finden. |
 | 2.1  | 2    | muss           | Als User möchte ich Dateien und Ordner löschen können, um Speicherplatz freizugeben. |
+| 2.2  | 2    | sollte         | Als User möchte ich gelöschte Dateien in einen Papierkorb verschieben, um sie im Notfall wiederherstellen zu können. |
 | 3.1  | 3    | muss           | Als User möchte ich Dateien in Ordner verschieben können, um meine Daten besser zu organisieren. |
+| 3.2  | 3    | sollte         | Als User möchte ich mehrere Dateien gleichzeitig verschieben können, um effizienter zu arbeiten. |
+| 3.3  | 3    | sollte         | Als User möchte ich eine Benachrichtigung erhalten, wenn eine Datei mit demselben Namen im Zielordner existiert, um eine versehentliche Überschreibung zu vermeiden. |
 | 4.1  | 5    | muss           | Als User möchte ich vor dem Löschen eine Bestätigung erhalten, um versehentliches Löschen zu vermeiden. |
+| 4.2  | 5    | sollte         | Als User möchte ich eine Option haben, die Bestätigungsabfrage zu deaktivieren, wenn ich sicher bin, dass ich löschen möchte. |
+| 5.1  | 6    | muss           | Als User möchte ich, dass die Anwendung schnell arbeitet, um nicht lange auf Suchergebnisse oder Dateioperationen warten zu müssen. |
+| 6.1  | 7    | muss           | Als User möchte ich die Anwendung auf verschiedenen Betriebssystemen nutzen können, um flexibel arbeiten zu können. |
+| 7.1  | 8    | muss           | Als User möchte ich eine intuitive Benutzeroberfläche, um die Anwendung ohne lange Einarbeitung bedienen zu können. |
+| 7.2  | 8    | sollte         | Als User möchte ich eine Drag-and-Drop-Funktion nutzen können, um Dateien einfacher zu verschieben. |
+| 7.3  | 8    | könnte         | Als User möchte ich ein Kontextmenü mit Schnellaktionen haben (z. B. Löschen, Verschieben), um weniger Klicks machen zu müssen. |
+| 8.1  | 9    | muss           | Als User möchte ich, dass die Anwendung mit Python 3.8 oder höher kompatibel ist, um sie problemlos ausführen zu können. |
+
 
 ## 2. Planen
 
@@ -46,7 +59,7 @@
 |------|----------------------------|------------------------------------------------|------------------------------------------------|
 | 1.1  | Applikation ist geöffnet   | Nach einem existierenden File suchen           | Datei wird korrekt gefunden und angezeigt.    |
 | 1.2  | Applikation ist geöffnet   | Nach einem nicht existierenden File suchen     | Fehlermeldung: „Datei nicht gefunden“.       |
-| 1.3  | Applikation ist geöffnet   | Nach einer existierenden Datei mit Gross-/Kleinschreibung suchen | Datei wird korrekt gefunden (Suche ist case-insensitive). |
+| 1.3  | Applikation ist geöffnet   | Nach einer existierenden Datei mit Gross-/Kleinschreibung suchen | Datei wird korrekt gefunden. |
 | 1.4  | Applikation ist geöffnet   | Nach einem Ordner suchen                       | Ordner wird korrekt gefunden und angezeigt.   |
 | 1.5  | Applikation ist geöffnet   | Suchbegriff mit Sonderzeichen eingeben (`test_file@123`) | Falls vorhanden, Datei wird korrekt gefunden. |
 | 1.6  | Applikation ist geöffnet   | Suchfeld leer lassen und Suche starten        | Fehlermeldung: „Bitte Suchbegriff eingeben!“. |
@@ -62,8 +75,6 @@
 | 3.4  | Applikation ist geöffnet   | Datei in einen nicht existierenden Ordner verschieben | Fehlermeldung: „Zielordner existiert nicht.“ |
 | 3.5  | Applikation ist geöffnet   | Datei überschreiben (Zieldatei existiert bereits) | Meldung zur Bestätigung: „Datei existiert bereits. Überschreiben?“ |
 | 4.1  | Applikation ist geöffnet   | Mehrere Dateien gleichzeitig auswählen und verschieben | Alle gewählten Dateien werden korrekt verschoben. |
-| 4.2  | Applikation ist geöffnet   | Applikation während einer laufenden Aktion schliessen | Bestätigungsabfrage: „Möchten Sie wirklich beenden?“ |
-| 4.3  | Applikation ist geöffnet   | Suche nach einer versteckten Datei            | Falls erlaubt, versteckte Datei wird gefunden. |
 
 
 
@@ -92,11 +103,25 @@ Da die Kernfunktionalitäten essenziell für einen File-Manager sind, wird zuers
 
 | TC-№ | Ergebnis     | Bemerkungen                                     |
 | ---- | ----------- | --------------------------------------------- |
-| 1.1  | TBD         | TBD                                           |
-| 1.2  | TBD         | TBD                                           |
-| 2.1  | TBD         | TBD                                           |
-| 2.2  | TBD         | TBD                                           |
-| 3.1  | TBD         | TBD                                           |
+| 1.1  | NOK         | will nicht immer zugreifen                    |
+| 1.2  | OK          | TBD                                           |
+| 1.3  | OK          | TBD                                           |
+| 1.4  | NOK         | Will nicht immer                              |
+| 1.5  | OK          | TBD                                           |
+| 1.6  | OK          | TBD                                           |
+| 1.7  | OK          | TBD                                           |
+| 2.1  | OK          | TBD                                           |
+| 2.2  | OK          | TBD                                           |
+| 2.3  | OK          | TBD                                           |
+| 2.4  | OK          | TBD                                           |
+| 2.5  | OK          | TBD                                           |
+| 3.1  | OK          | TBD                                           |
+| 3.2  | OK          | TBD                                           |
+| 3.3  | OK          | TBD                                           |
+| 3.4  | OK          | TBD                                           |
+| 3.5  | OK          | TBD                                           |
+| 4.1  | OK          | TBD                                           |
+
 
 ### 5.2 Testbericht
 
