@@ -104,23 +104,23 @@ Da die Kernfunktionalitäten essenziell für einen File-Manager sind, wird zuers
 | TC-№ | Ergebnis     | Bemerkungen                                     |
 | ---- | ----------- | --------------------------------------------- |
 | 1.1  | NOK         | will nicht immer zugreifen                    |
-| 1.2  | OK          | TBD                                           |
-| 1.3  | OK          | TBD                                           |
+| 1.2  | OK          | -                                             |
+| 1.3  | OK          | -                                           |
 | 1.4  | NOK         | Will nicht immer                              |
-| 1.5  | OK          | TBD                                           |
-| 1.6  | OK          | TBD                                           |
-| 1.7  | OK          | TBD                                           |
-| 2.1  | OK          | TBD                                           |
-| 2.2  | OK          | TBD                                           |
-| 2.3  | OK          | TBD                                           |
-| 2.4  | OK          | TBD                                           |
-| 2.5  | OK          | TBD                                           |
-| 3.1  | OK          | TBD                                           |
-| 3.2  | OK          | TBD                                           |
-| 3.3  | OK          | TBD                                           |
-| 3.4  | OK          | TBD                                           |
-| 3.5  | OK          | TBD                                           |
-| 4.1  | OK          | TBD                                           |
+| 1.5  | OK          | -                                           |
+| 1.6  | OK          | -                                           |
+| 1.7  | OK          | -                                           |
+| 2.1  | OK          | -                                           |
+| 2.2  | OK          | -                                           |
+| 2.3  | OK          | -                                           |
+| 2.4  | OK          | -                                           |
+| 2.5  | OK          | -                                           |
+| 3.1  | OK          | -                                           |
+| 3.2  | OK          | -                                           |
+| 3.3  | OK          | -                                           |
+| 3.4  | OK          | -                                           |
+| 3.5  | OK          | -                                           |
+| 4.1  | OK          | -                                           |
 
 
 ### 5.2 Testbericht
