@@ -41,28 +41,30 @@
 | 8     | Luca J.W   | 07.03.25    | Durchführung von Tests, Dokumentation und Portfolio schreiben. | 180 min       |
 
 ### 2.2 Testfälle
-| **TC-№** | **Ausgangslage**               | **Eingabe**                                         | **Erwartete Ausgabe**                              |
-|---------|--------------------------------|----------------------------------------------------|--------------------------------------------------|
-| **1.1**  | Applikation ist geöffnet       | Nach einem existierenden File suchen               | Datei wird korrekt gefunden und angezeigt.      |
-| **1.2**  | Applikation ist geöffnet       | Nach einem nicht existierenden File suchen         | Fehlermeldung: „Datei nicht gefunden“.          |
-| **1.3**  | Applikation ist geöffnet       | Nach einer existierenden Datei mit Gross-/Kleinschreibung suchen | Datei wird korrekt gefunden (Suche ist case-insensitive). |
-| **1.4**  | Applikation ist geöffnet       | Nach einem Ordner suchen                           | Ordner wird korrekt gefunden und angezeigt.      |
-| **1.5**  | Applikation ist geöffnet       | Suchbegriff mit Sonderzeichen eingeben (`test_file@123`) | Falls vorhanden, Datei wird korrekt gefunden. |
-| **1.6**  | Applikation ist geöffnet       | Suchfeld leer lassen und Suche starten            | Fehlermeldung: „Bitte Suchbegriff eingeben!“.   |
-| **1.7**  | Applikation ist geöffnet       | Suche in leerem Ordner durchführen                | Meldung: „Keine Ergebnisse gefunden.“           |
-| **2.1**  | Applikation ist geöffnet       | Eine Datei auswählen und löschen                   | Datei wird nach Bestätigung gelöscht.           |
-| **2.2**  | Applikation ist geöffnet       | Eine Datei ohne Bestätigung löschen                | Datei bleibt bestehen.                           |
-| **2.3**  | Applikation ist geöffnet       | Versuch, eine bereits gelöschte Datei zu löschen  | Fehlermeldung: „Datei existiert nicht mehr!“.  |
-| **2.4**  | Applikation ist geöffnet       | Versuch, einen schreibgeschützten Ordner zu löschen | Fehlermeldung: „Löschen fehlgeschlagen: Zugriff verweigert.“ |
-| **2.5**  | Applikation ist geöffnet       | Versuchen, eine Datei zu löschen, die vom System verwendet wird | Fehlermeldung: „Datei kann nicht gelöscht werden, da sie in Verwendung ist.“ |
-| **3.1**  | Applikation ist geöffnet       | Eine Datei in einen anderen Ordner verschieben     | Datei wird in den gewählten Ordner verschoben.  |
-| **3.2**  | Applikation ist geöffnet       | Datei in denselben Ordner verschieben              | Fehlermeldung: „Datei befindet sich bereits im Zielordner.“ |
-| **3.3**  | Applikation ist geöffnet       | Datei in einen schreibgeschützten Ordner verschieben | Fehlermeldung: „Verschieben fehlgeschlagen: Zugriff verweigert.“ |
-| **3.4**  | Applikation ist geöffnet       | Datei in einen nicht existierenden Ordner verschieben | Fehlermeldung: „Zielordner existiert nicht.“    |
-| **3.5**  | Applikation ist geöffnet       | Datei überschreiben (Zieldatei existiert bereits) | Meldung zur Bestätigung: „Datei existiert bereits. Überschreiben?“ |
-| **4.1**  | Applikation ist geöffnet       | Mehrere Dateien gleichzeitig auswählen und verschieben | Alle gewählten Dateien werden korrekt verschoben. |
-| **4.2**  | Applikation ist geöffnet       | Applikation während einer laufenden Aktion schliessen | Bestätigungsabfrage: „Möchten Sie wirklich beenden?“ |
-| **4.3**  | Applikation ist geöffnet       | Suche nach einer versteckten Datei                | Falls erlaubt, versteckte Datei wird gefunden.  |
+
+| TC-№ | Ausgangslage               | Eingabe                                         | Erwartete Ausgabe                              |
+|------|----------------------------|------------------------------------------------|------------------------------------------------|
+| 1.1  | Applikation ist geöffnet   | Nach einem existierenden File suchen           | Datei wird korrekt gefunden und angezeigt.    |
+| 1.2  | Applikation ist geöffnet   | Nach einem nicht existierenden File suchen     | Fehlermeldung: „Datei nicht gefunden“.       |
+| 1.3  | Applikation ist geöffnet   | Nach einer existierenden Datei mit Gross-/Kleinschreibung suchen | Datei wird korrekt gefunden (Suche ist case-insensitive). |
+| 1.4  | Applikation ist geöffnet   | Nach einem Ordner suchen                       | Ordner wird korrekt gefunden und angezeigt.   |
+| 1.5  | Applikation ist geöffnet   | Suchbegriff mit Sonderzeichen eingeben (`test_file@123`) | Falls vorhanden, Datei wird korrekt gefunden. |
+| 1.6  | Applikation ist geöffnet   | Suchfeld leer lassen und Suche starten        | Fehlermeldung: „Bitte Suchbegriff eingeben!“. |
+| 1.7  | Applikation ist geöffnet   | Suche in leerem Ordner durchführen            | Meldung: „Keine Ergebnisse gefunden.“        |
+| 2.1  | Applikation ist geöffnet   | Eine Datei auswählen und löschen              | Datei wird nach Bestätigung gelöscht.        |
+| 2.2  | Applikation ist geöffnet   | Eine Datei ohne Bestätigung löschen           | Datei bleibt bestehen.                        |
+| 2.3  | Applikation ist geöffnet   | Versuch, eine bereits gelöschte Datei zu löschen | Fehlermeldung: „Datei existiert nicht mehr!“. |
+| 2.4  | Applikation ist geöffnet   | Versuch, einen schreibgeschützten Ordner zu löschen | Fehlermeldung: „Löschen fehlgeschlagen: Zugriff verweigert.“ |
+| 2.5  | Applikation ist geöffnet   | Versuchen, eine Datei zu löschen, die vom System verwendet wird | Fehlermeldung: „Datei kann nicht gelöscht werden, da sie in Verwendung ist.“ |
+| 3.1  | Applikation ist geöffnet   | Eine Datei in einen anderen Ordner verschieben | Datei wird in den gewählten Ordner verschoben. |
+| 3.2  | Applikation ist geöffnet   | Datei in denselben Ordner verschieben          | Fehlermeldung: „Datei befindet sich bereits im Zielordner.“ |
+| 3.3  | Applikation ist geöffnet   | Datei in einen schreibgeschützten Ordner verschieben | Fehlermeldung: „Verschieben fehlgeschlagen: Zugriff verweigert.“ |
+| 3.4  | Applikation ist geöffnet   | Datei in einen nicht existierenden Ordner verschieben | Fehlermeldung: „Zielordner existiert nicht.“ |
+| 3.5  | Applikation ist geöffnet   | Datei überschreiben (Zieldatei existiert bereits) | Meldung zur Bestätigung: „Datei existiert bereits. Überschreiben?“ |
+| 4.1  | Applikation ist geöffnet   | Mehrere Dateien gleichzeitig auswählen und verschieben | Alle gewählten Dateien werden korrekt verschoben. |
+| 4.2  | Applikation ist geöffnet   | Applikation während einer laufenden Aktion schliessen | Bestätigungsabfrage: „Möchten Sie wirklich beenden?“ |
+| 4.3  | Applikation ist geöffnet   | Suche nach einer versteckten Datei            | Falls erlaubt, versteckte Datei wird gefunden. |
+
 
 
 ## 3. Entscheiden
