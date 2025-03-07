@@ -125,4 +125,4 @@ Da die Kernfunktionalitäten essenziell für einen File-Manager sind, wird zuers
 
 ### 5.2 Testbericht
 
-Nach Abschluss der Implementierung werden Tests durchgeführt, um sicherzustellen, dass die Kernfunktionen stabil laufen. Falls erforderlich, werden Optimierungen und Fehlerkorrekturen vorgenommen.
+Die meisten Test liefen gut, problematisch war leider das die Suchfunktion sehr oft nicht funktioniert. Dies müsste noch verbessert werden um das Programm zu veröffentlichen können.
